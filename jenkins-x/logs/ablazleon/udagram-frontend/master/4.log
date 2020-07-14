@@ -1,0 +1,39 @@
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1594769336.7816842,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-udagram-frontend-mast-6xdxl-wzcnk[0m
+{"level":"info","ts":1594769345.6687565,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/udagram-frontend.git @ v0.0.7 in path /workspace/source"}
+{"level":"warn","ts":1594769345.6689382,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1594769345.7092204,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:026a3de0ceefbfc3698356c69b87b642a5a13399
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-6xdxl-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm ERR! file /workspace/source/package.json
+npm ERR! code EJSONPARSE
+npm ERR! JSON.parse Failed to parse json
+npm ERR! JSON.parse Unexpected string in JSON at position 237 while parsing '{
+npm ERR! JSON.parse   "name": "udagram-frontend",
+npm ERR! JSON.parse   "versi'
+npm ERR! JSON.parse Failed to parse package.json data.
+npm ERR! JSON.parse package.json must be actual JSON, not just JavaScript.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /tekton/home/.npm/_logs/2020-07-14T23_29_08_492Z-debug.log
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-npm-install'. The execution of the pipeline has stopped.[0m
