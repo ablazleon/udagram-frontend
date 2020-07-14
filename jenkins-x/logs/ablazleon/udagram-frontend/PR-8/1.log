@@ -1,0 +1,48 @@
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1594769290.1746361,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-udagram-frontend-pr-8-vmbhs-fbcjp[0m
+{"level":"info","ts":1594769298.490851,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/udagram-frontend.git @ master in path /workspace/source"}
+{"level":"warn","ts":1594769298.4909456,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1594769298.532599,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:a791849e4903c75402c54cc8ebff7e41631336f0,8:5afde1966673bbde9e099fb2647151f8f5c481dd
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 5afde1966673bbde9e099fb2647151f8f5c481dd: a791849e4903c75402c54cc8ebff7e41631336f0:
+DEBUG: ran git fetch --unshallow origin 5afde1966673bbde9e099fb2647151f8f5c481dd: a791849e4903c75402c54cc8ebff7e41631336f0: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git reset --hard a791849e4903c75402c54cc8ebff7e41631336f0
+DEBUG: ran git reset --hard a791849e4903c75402c54cc8ebff7e41631336f0 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 5afde1966673bbde9e099fb2647151f8f5c481dd
+DEBUG: ran git merge 5afde1966673bbde9e099fb2647151f8f5c481dd in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e a791849e4903c75402c54cc8ebff7e41631336f0..HEAD
+Merged SHA 5afde1966673bbde9e099fb2647151f8f5c481dd with commit message 'Update package.json' into base branch master
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-8-vmbhs-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+npm ERR! file /workspace/source/package.json
+npm ERR! code EJSONPARSE
+npm ERR! JSON.parse Failed to parse json
+npm ERR! JSON.parse Unexpected string in JSON at position 237 while parsing '{
+npm ERR! JSON.parse   "name": "udagram-frontend",
+npm ERR! JSON.parse   "versi'
+npm ERR! JSON.parse Failed to parse package.json data.
+npm ERR! JSON.parse package.json must be actual JSON, not just JavaScript.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /tekton/home/.npm/_logs/2020-07-14T23_28_26_224Z-debug.log
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-npm-install'. The execution of the pipeline has stopped.[0m
