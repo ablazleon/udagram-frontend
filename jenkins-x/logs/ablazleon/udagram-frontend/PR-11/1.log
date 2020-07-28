@@ -1,0 +1,160 @@
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1595971787.590662,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-udagram-frontend-pr-1-llxn8-5bvcz[0m
+{"level":"info","ts":1595971797.6800325,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/udagram-frontend.git @ master in path /workspace/source"}
+{"level":"warn","ts":1595971797.6805704,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1595971797.7586122,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:b0afdc4745aac4d8afc9a31f4ff4661732b9bf71,11:082e5747721a85737d7a6aad27ca5eb227286753
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 082e5747721a85737d7a6aad27ca5eb227286753: b0afdc4745aac4d8afc9a31f4ff4661732b9bf71:
+DEBUG: ran git fetch --unshallow origin 082e5747721a85737d7a6aad27ca5eb227286753: b0afdc4745aac4d8afc9a31f4ff4661732b9bf71: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard b0afdc4745aac4d8afc9a31f4ff4661732b9bf71
+DEBUG: ran git reset --hard b0afdc4745aac4d8afc9a31f4ff4661732b9bf71 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 082e5747721a85737d7a6aad27ca5eb227286753
+DEBUG: ran git merge 082e5747721a85737d7a6aad27ca5eb227286753 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e b0afdc4745aac4d8afc9a31f4ff4661732b9bf71..HEAD
+Merged SHA 082e5747721a85737d7a6aad27ca5eb227286753 with commit message 'Update Dockerfile' into base branch master
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+
+> core-js@3.6.4 postinstall /workspace/source/node_modules/@angular-devkit/build-angular/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@2.6.9 postinstall /workspace/source/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> @angular/cli@8.3.25 postinstall /workspace/source/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1366 packages from 1049 contributors and audited 1437 packages in 56.634s
+found 1386 vulnerabilities (1383 low, 1 moderate, 2 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> udagram-frontend@0.0.1 test /workspace/source
+> echo "test" 
+
+test
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0728 21:31:03.115423      11 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0001] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0001] Retrieving image manifest node:13            
+E0728 21:31:03.504093      11 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0728 21:31:03.507831      11 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0002] Retrieving image manifest node:13            
+[36mINFO[0m[0003] Built cross stage deps: map[]                
+[36mINFO[0m[0003] Retrieving image manifest node:13            
+[36mINFO[0m[0004] Retrieving image manifest node:13            
+[36mINFO[0m[0005] Executing 0 build triggers                   
+[36mINFO[0m[0005] cmd: EXPOSE                                  
+[36mINFO[0m[0005] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0016] Checking for cached layer gcr.io/myenv-283021/cache:eccf50856a26589bf27f4ab459e60f6a3034f8fe26a0c767c0e848ae30d6b64f... 
+[36mINFO[0m[0017] No cached layer found for cmd COPY . .       
+[36mINFO[0m[0017] Unpacking rootfs as cmd COPY . . requires it. 
+[36mINFO[0m[0039] ENV PORT 8080                                
+[36mINFO[0m[0039] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0039] EXPOSE 8080                                  
+[36mINFO[0m[0039] cmd: EXPOSE                                  
+[36mINFO[0m[0039] Adding exposed port: 8080/tcp                
+[36mINFO[0m[0039] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0039] WORKDIR /usr/src/app                         
+[36mINFO[0m[0039] cmd: workdir                                 
+[36mINFO[0m[0039] Changed working directory to /usr/src/app    
+[36mINFO[0m[0039] Creating directory /usr/src/app              
+[36mINFO[0m[0039] Resolving 1 paths                            
+[36mINFO[0m[0039] Taking snapshot of files...                  
+[36mINFO[0m[0104] COPY . .                                     
+[36mINFO[0m[0128] Resolving 86075 paths                        
+[36mINFO[0m[0134] Taking snapshot of files...                  
+[36mINFO[0m[0157] Pushing layer gcr.io/myenv-283021/cache:eccf50856a26589bf27f4ab459e60f6a3034f8fe26a0c767c0e848ae30d6b64f to cache now 
+[36mINFO[0m[0157] CMD ["npm", "start"]                         
+[36mINFO[0m[0157] No files changed in this command, skipping snapshotting. 
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-postbuild-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-make-preview[0m
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-11-1/" Chart.yaml
+sed -i -e "s/version:.*/version: 0.0.0-SNAPSHOT-PR-11-1/" ../*/Chart.yaml
+sed -i -e "s|repository:.*|repository: gcr.io\/myenv-283021\/udagram-frontend|" values.yaml
+sed -i -e "s/tag:.*/tag: 0.0.0-SNAPSHOT-PR-11-1/" values.yaml
+echo "  version: 0.0.0-SNAPSHOT-PR-11-1" >> requirements.yaml
+** step helm build
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+Showing logs for build [32mablazleon-udagram-frontend-pr-1-llxn8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-preview[0m
+Creating a preview
+Found commit author match for: ********* with email address: adrian.blazquez.leon@alumnos.upm.es
+Created environment *********-udagram-frontend-pr-11
+Namespace **-*********-udagram-frontend-pr-11 created 
+expose:
+  Annotations:
+    helm.sh/hook: post-install,post-upgrade
+    helm.sh/hook-delete-policy: hook-succeeded
+  config:
+    domain: 35.195.173.85.nip.io
+    exposer: Ingress
+    http: "true"
+preview:
+  image:
+    repository: gcr.io/myenv-283021/udagram-frontend
+    tag: 0.0.0-SNAPSHOT-PR-11-1
+
+Updating PipelineActivities *********-udagram-frontend-pr-11-1 which has status Running
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 783.034151ms
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1.077829579s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 2.409014871s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 2.690153652s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 6.912008504s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 4.011801539s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 16.803924065s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 9.553100503s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 17.255077299s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 29.928448281s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 43.452942397s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 51.708328829s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 1m23.66170376s
+WARNING: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable, delaying for: 34.457459937s
+error: error checking if preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io is available: preview application http://udagram-frontend.**-*********-udagram-frontend-pr-11.35.195.173.85.nip.io not available, error was 503 503 Service Temporarily Unavailable
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-jx-preview'. The execution of the pipeline has stopped.[0m
