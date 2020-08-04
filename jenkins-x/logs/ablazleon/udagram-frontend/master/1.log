@@ -1,39 +1,167 @@
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
-{"level":"info","ts":1595962072.453304,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1596558868.6214712,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-udagram-frontend-mast-vb5m8-cf488[0m
-{"level":"info","ts":1595962107.9221187,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/udagram-frontend.git @ v0.0.8 in path /workspace/source"}
-{"level":"warn","ts":1595962107.9222128,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
-{"level":"info","ts":1595962107.9625893,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-udagram-frontend-mast-f6r85-lqbp5[0m
+{"level":"info","ts":1596558902.1864388,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/udagram-frontend.git @ v0.0.13 in path /workspace/source"}
+{"level":"warn","ts":1596558902.1865506,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1596558902.2270038,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
 WARNING: failed to find Secret npm-token in namespace **
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-vb5m8-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
-npm ERR! file /workspace/source/package.json
-npm ERR! code EJSONPARSE
-npm ERR! JSON.parse Failed to parse json
-npm ERR! JSON.parse Unexpected string in JSON at position 237 while parsing '{
-npm ERR! JSON.parse   "name": "udagram-frontend",
-npm ERR! JSON.parse   "versi'
-npm ERR! JSON.parse Failed to parse package.json data.
-npm ERR! JSON.parse package.json must be actual JSON, not just JavaScript.
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+
+> core-js@3.6.4 postinstall /workspace/source/node_modules/@angular-devkit/build-angular/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js@2.6.9 postinstall /workspace/source/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> @angular/cli@8.3.25 postinstall /workspace/source/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1366 packages from 1049 contributors and audited 1437 packages in 54.161s
+found 1388 vulnerabilities (1383 low, 1 moderate, 4 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> udagram-frontend@0.0.1 test /workspace/source
+> echo "test" 
+
+test
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-f6r85-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0804 16:36:03.020834      11 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0001] Resolved base name node:13-alpine to build   
+[36mINFO[0m[0001] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0001] Retrieving image manifest node:13-alpine     
+E0804 16:36:04.019589      11 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0804 16:36:04.023177      11 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0002] Retrieving image manifest node:13-alpine     
+[36mINFO[0m[0003] Retrieving image manifest nginx:alpine       
+[36mINFO[0m[0004] Retrieving image manifest nginx:alpine       
+[36mINFO[0m[0005] Built cross stage deps: map[0:[/app/www/]]   
+[36mINFO[0m[0005] Retrieving image manifest node:13-alpine     
+[36mINFO[0m[0005] Retrieving image manifest node:13-alpine     
+[36mINFO[0m[0006] Executing 0 build triggers                   
+[36mINFO[0m[0006] Resolving srcs [package*.json]...            
+[36mINFO[0m[0007] Checking for cached layer gcr.io/striking-joy-285411/cache:cff67ef3d8a13f81fa786aef97598cf9f8d4bd19c357443b9a0e6a29a2ad0d45... 
+[36mINFO[0m[0007] No cached layer found for cmd COPY package*.json /app/ 
+[36mINFO[0m[0050] Unpacking rootfs as cmd COPY package*.json /app/ requires it. 
+[36mINFO[0m[0054] WORKDIR /app                                 
+[36mINFO[0m[0054] cmd: workdir                                 
+[36mINFO[0m[0054] Changed working directory to /app            
+[36mINFO[0m[0054] Creating directory /app                      
+[36mINFO[0m[0054] Resolving 1 paths                            
+[36mINFO[0m[0054] Taking snapshot of files...                  
+[36mINFO[0m[0054] Resolving srcs [package*.json]...            
+[36mINFO[0m[0057] COPY package*.json /app/                     
+[36mINFO[0m[0057] Resolving srcs [package*.json]...            
+[36mINFO[0m[0059] Resolving 2 paths                            
+[36mINFO[0m[0059] Taking snapshot of files...                  
+[36mINFO[0m[0059] RUN npm install -g ionic                     
+[36mINFO[0m[0059] Taking snapshot of full filesystem...        
+[36mINFO[0m[0059] Pushing layer gcr.io/striking-joy-285411/cache:cff67ef3d8a13f81fa786aef97598cf9f8d4bd19c357443b9a0e6a29a2ad0d45 to cache now 
+[36mINFO[0m[0060] Resolving 6090 paths                         
+[36mINFO[0m[0061] cmd: /bin/sh                                 
+[36mINFO[0m[0061] args: [-c npm install -g ionic]              
+[36mINFO[0m[0061] Running: [/bin/sh -c npm install -g ionic]   
+npm WARN deprecated ionic@5.4.16: The Ionic CLI now uses ✨ @ionic/cli ✨ for its package name! 👉 https://twitter.com/ionicframework/status/1223268498362851330
+/usr/local/bin/ionic -> /usr/local/lib/node_modules/ionic/bin/ionic
++ ionic@5.4.16
+added 239 packages from 153 contributors in 12.588s
+[36mINFO[0m[0074] Taking snapshot of full filesystem...        
+[36mINFO[0m[0075] Resolving 16322 paths                        
+[36mINFO[0m[0078] Pushing layer gcr.io/striking-joy-285411/cache:f7cbbc2203c57016c3e6be26e7df184f492e91d8680e841f31d1c5cfeed391a4 to cache now 
+[36mINFO[0m[0078] RUN npm install                              
+[36mINFO[0m[0078] cmd: /bin/sh                                 
+[36mINFO[0m[0078] args: [-c npm install]                       
+[36mINFO[0m[0078] Running: [/bin/sh -c npm install]            
+
+> core-js@3.6.4 postinstall /app/node_modules/@angular-devkit/build-angular/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.9 postinstall /app/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> @angular/cli@8.3.25 postinstall /app/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1366 packages from 1049 contributors and audited 1437 packages in 46.326s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+found 1388 vulnerabilities (1383 low, 1 moderate, 4 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+[36mINFO[0m[0126] Taking snapshot of full filesystem...        
+[36mINFO[0m[0131] Resolving 106255 paths                       
+[36mINFO[0m[0185] Pushing layer gcr.io/striking-joy-285411/cache:aa721be2af33da9fd560accf2f3ad858f5e0453bddc75823dd79fab8c0f8ebb7 to cache now 
+[36mINFO[0m[0418] COPY ./ /app/                                
+[36mINFO[0m[0655] Resolving 85995 paths                        
+[36mINFO[0m[0660] Taking snapshot of files...                  
+[36mINFO[0m[0723] Pushing layer gcr.io/striking-joy-285411/cache:e417b4432ec28f6d8bdfe2b9342650774f708cc58cc006ea83fa0c5d32e97837 to cache now 
+[36mINFO[0m[0723] RUN npm run-script build:prod                
+[36mINFO[0m[0723] cmd: /bin/sh                                 
+[36mINFO[0m[0723] args: [-c npm run-script build:prod]         
+[36mINFO[0m[0723] Running: [/bin/sh -c npm run-script build:prod] 
+npm ERR! missing script: build:prod
+npm ERR! 
+npm ERR! Did you mean this?
+npm ERR!     build
 
 npm ERR! A complete log of this run can be found in:
-npm ERR!     /tekton/home/.npm/_logs/2020-07-28T18_48_30_931Z-debug.log
+npm ERR!     /root/.npm/_logs/2020-08-04T16_48_11_055Z-debug.log
+error building image: error building stage: failed to execute command: waiting for process to exit: exit status 1
 [31m
-Pipeline failed on stage 'from-build-pack' : container 'step-build-npm-install'. The execution of the pipeline has stopped.[0m
+Pipeline failed on stage 'from-build-pack' : container 'step-build-container-build'. The execution of the pipeline has stopped.[0m
