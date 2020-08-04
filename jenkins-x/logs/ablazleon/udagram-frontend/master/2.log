@@ -1,29 +1,29 @@
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
-{"level":"info","ts":1595963854.7972472,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1596581706.3197105,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-udagram-frontend-mast-6v4qx-xr6dg[0m
-{"level":"info","ts":1595963863.6881597,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/udagram-frontend.git @ v0.0.9 in path /workspace/source"}
-{"level":"warn","ts":1595963863.6882575,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
-{"level":"info","ts":1595963863.737555,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-ablazleon-udagram-frontend-mast-8k29b-dqp8q[0m
+{"level":"info","ts":1596581716.6990585,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*********/udagram-frontend.git @ v0.0.14 in path /workspace/source"}
+{"level":"warn","ts":1596581716.6995351,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1596581716.776617,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:b0afdc4745aac4d8afc9a31f4ff4661732b9bf71
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:1c14e8de0cea1b6c9b19ca81ff51e5456b3a3e6c
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
 WARNING: failed to find Secret npm-token in namespace **
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
 
 > core-js@3.6.4 postinstall /workspace/source/node_modules/@angular-devkit/build-angular/node_modules/core-js
 > node -e "try{require('./postinstall')}catch(e){}"
@@ -47,88 +47,353 @@ Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [
 npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
 npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
 
-added 1366 packages from 1049 contributors and audited 1437 packages in 48.179s
-found 1386 vulnerabilities (1383 low, 1 moderate, 2 high)
+added 1366 packages from 1049 contributors and audited 1437 packages in 135.672s
+found 1388 vulnerabilities (1383 low, 1 moderate, 4 high)
   run `npm audit fix` to fix them, or `npm audit` for details
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
 
 > udagram-frontend@0.0.1 test /workspace/source
 > echo "test" 
 
 test
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
-E0728 19:18:38.702959      11 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0804 22:57:40.509924      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
 	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0001] Resolved base name node:13-alpine to build   
 [36mINFO[0m[0001] Using dockerignore file: /workspace/source/.dockerignore 
-[36mINFO[0m[0001] Retrieving image manifest node:9-slim        
-E0728 19:18:39.172047      11 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-E0728 19:18:39.175974      11 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-[36mINFO[0m[0002] Retrieving image manifest node:9-slim        
-[36mINFO[0m[0003] Built cross stage deps: map[]                
-[36mINFO[0m[0003] Retrieving image manifest node:9-slim        
-[36mINFO[0m[0004] Retrieving image manifest node:9-slim        
+[36mINFO[0m[0001] Retrieving image manifest node:13-alpine     
+E0804 22:57:40.955589      10 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0804 22:57:40.959503      10 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[0001] Retrieving image manifest node:13-alpine     
+[36mINFO[0m[0002] Retrieving image manifest nginx:alpine       
+[36mINFO[0m[0003] Retrieving image manifest nginx:alpine       
+[36mINFO[0m[0004] Built cross stage deps: map[0:[/app/www/]]   
+[36mINFO[0m[0004] Retrieving image manifest node:13-alpine     
+[36mINFO[0m[0004] Retrieving image manifest node:13-alpine     
 [36mINFO[0m[0005] Executing 0 build triggers                   
-[36mINFO[0m[0005] cmd: EXPOSE                                  
-[36mINFO[0m[0005] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0036] Checking for cached layer gcr.io/myenv-283021/cache:612669329ba16e221f5c1d7e0d688b0ee0999ce810adde010426e51c4c6c1d8e... 
-[36mINFO[0m[0037] No cached layer found for cmd COPY . .       
-[36mINFO[0m[0037] Unpacking rootfs as cmd COPY . . requires it. 
-[36mINFO[0m[0042] ENV PORT 8080                                
-[36mINFO[0m[0042] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0042] EXPOSE 8080                                  
-[36mINFO[0m[0042] cmd: EXPOSE                                  
-[36mINFO[0m[0042] Adding exposed port: 8080/tcp                
-[36mINFO[0m[0042] No files changed in this command, skipping snapshotting. 
-[36mINFO[0m[0042] WORKDIR /usr/src/app                         
-[36mINFO[0m[0042] cmd: workdir                                 
-[36mINFO[0m[0042] Changed working directory to /usr/src/app    
-[36mINFO[0m[0042] Creating directory /usr/src/app              
-[36mINFO[0m[0042] Resolving 1 paths                            
-[36mINFO[0m[0042] Taking snapshot of files...                  
-[36mINFO[0m[0056] COPY . .                                     
-[36mINFO[0m[0080] Resolving 85995 paths                        
-[36mINFO[0m[0086] Taking snapshot of files...                  
-[36mINFO[0m[0117] Pushing layer gcr.io/myenv-283021/cache:612669329ba16e221f5c1d7e0d688b0ee0999ce810adde010426e51c4c6c1d8e to cache now 
-[36mINFO[0m[0118] CMD ["npm", "start"]                         
-[36mINFO[0m[0118] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0005] Resolving srcs [package*.json]...            
+[36mINFO[0m[0005] Checking for cached layer gcr.io/striking-joy-285411/cache:d4c064e47bcee1c8b7f70a2e2226a18df83376d6fbca271a637e76657dccd5ff... 
+[36mINFO[0m[0006] No cached layer found for cmd COPY package*.json /app/ 
+[36mINFO[0m[0065] Unpacking rootfs as cmd COPY package*.json /app/ requires it. 
+[36mINFO[0m[0069] WORKDIR /app                                 
+[36mINFO[0m[0069] cmd: workdir                                 
+[36mINFO[0m[0069] Changed working directory to /app            
+[36mINFO[0m[0069] Creating directory /app                      
+[36mINFO[0m[0069] Resolving 1 paths                            
+[36mINFO[0m[0069] Taking snapshot of files...                  
+[36mINFO[0m[0069] Resolving srcs [package*.json]...            
+[36mINFO[0m[0073] COPY package*.json /app/                     
+[36mINFO[0m[0073] Resolving srcs [package*.json]...            
+[36mINFO[0m[0078] Resolving 2 paths                            
+[36mINFO[0m[0078] Taking snapshot of files...                  
+[36mINFO[0m[0078] Pushing layer gcr.io/striking-joy-285411/cache:d4c064e47bcee1c8b7f70a2e2226a18df83376d6fbca271a637e76657dccd5ff to cache now 
+[36mINFO[0m[0078] RUN npm install -g ionic                     
+[36mINFO[0m[0078] Taking snapshot of full filesystem...        
+[36mINFO[0m[0080] Resolving 6090 paths                         
+[36mINFO[0m[0081] cmd: /bin/sh                                 
+[36mINFO[0m[0081] args: [-c npm install -g ionic]              
+[36mINFO[0m[0081] Running: [/bin/sh -c npm install -g ionic]   
+npm WARN deprecated ionic@5.4.16: The Ionic CLI now uses ✨ @ionic/cli ✨ for its package name! 👉 https://twitter.com/ionicframework/status/1223268498362851330
+/usr/local/bin/ionic -> /usr/local/lib/node_modules/ionic/bin/ionic
++ ionic@5.4.16
+added 239 packages from 153 contributors in 17.32s
+[36mINFO[0m[0100] Taking snapshot of full filesystem...        
+[36mINFO[0m[0102] Resolving 16322 paths                        
+[36mINFO[0m[0108] RUN npm install                              
+[36mINFO[0m[0108] cmd: /bin/sh                                 
+[36mINFO[0m[0108] args: [-c npm install]                       
+[36mINFO[0m[0108] Running: [/bin/sh -c npm install]            
+[36mINFO[0m[0109] Pushing layer gcr.io/striking-joy-285411/cache:cca8a76eca61ca427ba31e99abb57d9114c78b3b77484bad96fcf3498e5fbbe7 to cache now 
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+> core-js@3.6.4 postinstall /app/node_modules/@angular-devkit/build-angular/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.9 postinstall /app/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> @angular/cli@8.3.25 postinstall /app/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1366 packages from 1049 contributors and audited 1437 packages in 163.514s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+found 1388 vulnerabilities (1383 low, 1 moderate, 4 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+[36mINFO[0m[0275] Taking snapshot of full filesystem...        
+[36mINFO[0m[0276] Resolving 106255 paths                       
+[36mINFO[0m[0910] Pushing layer gcr.io/striking-joy-285411/cache:902f286677bfa49d7dbcd48e5aac2b9e5cb5081a673725c5e6c9b8e32c618602 to cache now 
+[36mINFO[0m[1379] COPY ./ /app/                                
+[36mINFO[0m[1978] Resolving 85995 paths                        
+[36mINFO[0m[1984] Taking snapshot of files...                  
+[36mINFO[0m[2094] Pushing layer gcr.io/striking-joy-285411/cache:8234a7af44d05a797d221cf7bea0a1cb00dbbe9ea949caea2ac7120b92107237 to cache now 
+[36mINFO[0m[2094] RUN npm run-script build:prod                
+[36mINFO[0m[2094] cmd: /bin/sh                                 
+[36mINFO[0m[2094] args: [-c npm run-script build:prod]         
+[36mINFO[0m[2094] Running: [/bin/sh -c npm run-script build:prod] 
+
+> udagram-frontend@0.0.1 build:prod /app
+> ng build
+
+
+chunk {0} 0.js, 0.js.map () 16.4 kB  [rendered]
+chunk {1} 1.js, 1.js.map () 17.3 kB  [rendered]
+chunk {2} 2.js, 2.js.map () 31.4 kB  [rendered]
+chunk {3} 3.js, 3.js.map () 33 kB  [rendered]
+chunk {4} 4.js, 4.js.map () 25.7 kB  [rendered]
+chunk {5} 5.js, 5.js.map () 26.6 kB  [rendered]
+chunk {6} 6.js, 6.js.map () 24.7 kB  [rendered]
+chunk {7} 7.js, 7.js.map () 26.1 kB  [rendered]
+chunk {8} 8.js, 8.js.map () 23.9 kB  [rendered]
+chunk {9} 9.js, 9.js.map () 23.9 kB  [rendered]
+chunk {10} 10.js, 10.js.map () 32.5 kB  [rendered]
+chunk {11} 11.js, 11.js.map () 33.6 kB  [rendered]
+chunk {12} 12.js, 12.js.map () 33.7 kB  [rendered]
+chunk {13} 13.js, 13.js.map () 34.2 kB  [rendered]
+chunk {14} 14.js, 14.js.map () 30.1 kB  [rendered]
+chunk {15} 15.js, 15.js.map () 31.1 kB  [rendered]
+chunk {16} 16.js, 16.js.map () 31.5 kB  [rendered]
+chunk {17} 17.js, 17.js.map () 32 kB  [rendered]
+chunk {18} 18.js, 18.js.map () 30.4 kB  [rendered]
+chunk {19} 19.js, 19.js.map () 30.4 kB  [rendered]
+chunk {20} 20.js, 20.js.map () 23.6 kB  [rendered]
+chunk {21} 21.js, 21.js.map () 24.4 kB  [rendered]
+chunk {22} 22.js, 22.js.map () 23.4 kB  [rendered]
+chunk {23} 23.js, 23.js.map () 24.2 kB  [rendered]
+chunk {24} 24.js, 24.js.map () 25.5 kB  [rendered]
+chunk {25} 25.js, 25.js.map () 25.6 kB  [rendered]
+chunk {26} 26.js, 26.js.map () 25.6 kB  [rendered]
+chunk {27} 27.js, 27.js.map () 25.7 kB  [rendered]
+chunk {28} 28.js, 28.js.map () 23.9 kB  [rendered]
+chunk {29} 29.js, 29.js.map () 23.9 kB  [rendered]
+chunk {30} 30.js, 30.js.map () 42.4 kB  [rendered]
+chunk {31} 31.js, 31.js.map () 43.2 kB  [rendered]
+chunk {32} 32.js, 32.js.map () 21.3 kB  [rendered]
+chunk {33} 33.js, 33.js.map () 21.9 kB  [rendered]
+chunk {34} 34.js, 34.js.map () 25.7 kB  [rendered]
+chunk {35} 35.js, 35.js.map () 26.6 kB  [rendered]
+chunk {36} 36.js, 36.js.map () 33.6 kB  [rendered]
+chunk {37} 37.js, 37.js.map () 34 kB  [rendered]
+chunk {38} 38.js, 38.js.map () 32.8 kB  [rendered]
+chunk {39} 39.js, 39.js.map () 32.8 kB  [rendered]
+chunk {40} 40.js, 40.js.map () 21.4 kB  [rendered]
+chunk {41} 41.js, 41.js.map () 22 kB  [rendered]
+chunk {42} 42.js, 42.js.map () 31.6 kB  [rendered]
+chunk {43} 43.js, 43.js.map () 32.1 kB  [rendered]
+chunk {44} 44.js, 44.js.map () 32.4 kB  [rendered]
+chunk {45} 45.js, 45.js.map () 33.5 kB  [rendered]
+chunk {46} 46.js, 46.js.map () 42.5 kB  [rendered]
+chunk {47} 47.js, 47.js.map () 43.3 kB  [rendered]
+chunk {48} 48.js, 48.js.map () 24.1 kB  [rendered]
+chunk {49} 49.js, 49.js.map () 25 kB  [rendered]
+chunk {50} 50.js, 50.js.map () 33.5 kB  [rendered]
+chunk {51} 51.js, 51.js.map () 33.5 kB  [rendered]
+chunk {52} 52.js, 52.js.map () 22.8 kB  [rendered]
+chunk {53} 53.js, 53.js.map () 22.8 kB  [rendered]
+chunk {54} 54.js, 54.js.map () 46.5 kB  [rendered]
+chunk {55} 55.js, 55.js.map () 46.6 kB  [rendered]
+chunk {56} 56.js, 56.js.map () 15.9 kB  [rendered]
+chunk {57} 57.js, 57.js.map () 16.1 kB  [rendered]
+chunk {58} 58.js, 58.js.map () 22.8 kB  [rendered]
+chunk {59} 59.js, 59.js.map () 23.1 kB  [rendered]
+chunk {60} 60.js, 60.js.map () 22.4 kB  [rendered]
+chunk {61} 61.js, 61.js.map () 22.7 kB  [rendered]
+chunk {62} 62.js, 62.js.map () 25.4 kB  [rendered]
+chunk {63} 63.js, 63.js.map () 27.2 kB  [rendered]
+chunk {64} 64.js, 64.js.map () 25.8 kB  [rendered]
+chunk {65} 65.js, 65.js.map () 27.3 kB  [rendered]
+chunk {66} 66.js, 66.js.map () 16.6 kB  [rendered]
+chunk {67} 67.js, 67.js.map () 16.9 kB  [rendered]
+chunk {68} 68.js, 68.js.map () 16.6 kB  [rendered]
+chunk {69} 69.js, 69.js.map () 16.9 kB  [rendered]
+chunk {70} 70.js, 70.js.map () 16 kB  [rendered]
+chunk {71} 71.js, 71.js.map () 16.1 kB  [rendered]
+chunk {72} 72.js, 72.js.map () 17.6 kB  [rendered]
+chunk {73} 73.js, 73.js.map () 18 kB  [rendered]
+chunk {74} 74.js, 74.js.map () 24.9 kB  [rendered]
+chunk {75} 75.js, 75.js.map () 27.8 kB  [rendered]
+chunk {76} 76.js, 76.js.map () 26.9 kB  [rendered]
+chunk {77} 77.js, 77.js.map () 28.8 kB  [rendered]
+chunk {78} 78.js, 78.js.map () 25.2 kB  [rendered]
+chunk {79} 79.js, 79.js.map () 28 kB  [rendered]
+chunk {80} 80.js, 80.js.map () 22.2 kB  [rendered]
+chunk {81} 81.js, 81.js.map () 22.3 kB  [rendered]
+chunk {82} 82.js, 82.js.map () 49.9 kB  [rendered]
+chunk {83} 83.js, 83.js.map () 52.4 kB  [rendered]
+chunk {84} 84.js, 84.js.map () 46.3 kB  [rendered]
+chunk {85} 85.js, 85.js.map () 48.4 kB  [rendered]
+chunk {86} 86.js, 86.js.map () 12.9 kB  [rendered]
+chunk {87} 87.js, 87.js.map () 13 kB  [rendered]
+chunk {88} 88.js, 88.js.map () 26.6 kB  [rendered]
+chunk {89} 89.js, 89.js.map () 28.2 kB  [rendered]
+chunk {90} 90.js, 90.js.map () 46.5 kB  [rendered]
+chunk {91} 91.js, 91.js.map () 46.6 kB  [rendered]
+chunk {92} 92.js, 92.js.map () 30 kB  [rendered]
+chunk {93} 93.js, 93.js.map () 30 kB  [rendered]
+chunk {94} 94.js, 94.js.map () 16.6 kB  [rendered]
+chunk {95} 95.js, 95.js.map () 16.6 kB  [rendered]
+chunk {96} 96.js, 96.js.map () 6.43 kB  [rendered]
+chunk {97} 97.js, 97.js.map () 6.5 kB  [rendered]
+chunk {98} 98.js, 98.js.map () 17.6 kB  [rendered]
+chunk {99} 99.js, 99.js.map () 17.6 kB  [rendered]
+chunk {100} 100.js, 100.js.map () 6.43 kB  [rendered]
+chunk {101} 101.js, 101.js.map () 6.51 kB  [rendered]
+chunk {102} 102.js, 102.js.map () 44.1 kB  [rendered]
+chunk {103} 103.js, 103.js.map () 44.5 kB  [rendered]
+chunk {104} 104.js, 104.js.map () 44.4 kB  [rendered]
+chunk {105} 105.js, 105.js.map () 44.9 kB  [rendered]
+chunk {106} 106.js, 106.js.map () 19.8 kB  [rendered]
+chunk {107} 107.js, 107.js.map () 19.8 kB  [rendered]
+chunk {108} 108.js, 108.js.map () 16.6 kB  [rendered]
+chunk {109} 109.js, 109.js.map () 16.6 kB  [rendered]
+chunk {110} 110.js, 110.js.map () 19.4 kB  [rendered]
+chunk {111} 111.js, 111.js.map () 19.5 kB  [rendered]
+chunk {112} 112.js, 112.js.map () 17.6 kB  [rendered]
+chunk {113} 113.js, 113.js.map () 17.6 kB  [rendered]
+chunk {114} 114.js, 114.js.map () 17.8 kB  [rendered]
+chunk {115} 115.js, 115.js.map () 17.9 kB  [rendered]
+chunk {116} 116.js, 116.js.map () 13.7 kB  [rendered]
+chunk {117} 117.js, 117.js.map () 13.8 kB  [rendered]
+chunk {118} 118.js, 118.js.map () 19.4 kB  [rendered]
+chunk {119} 119.js, 119.js.map () 19.4 kB  [rendered]
+chunk {120} 120.js, 120.js.map () 10.4 kB  [rendered]
+chunk {121} 121.js, 121.js.map () 10.4 kB  [rendered]
+chunk {122} 122.js, 122.js.map () 27.5 kB  [rendered]
+chunk {123} 123.js, 123.js.map () 28.3 kB  [rendered]
+chunk {124} 124.js, 124.js.map () 10.8 kB  [rendered]
+chunk {125} 125.js, 125.js.map () 10.8 kB  [rendered]
+chunk {126} 126.js, 126.js.map () 17.3 kB  [rendered]
+chunk {127} 127.js, 127.js.map () 17.3 kB  [rendered]
+chunk {128} 128.js, 128.js.map () 24.5 kB  [rendered]
+chunk {129} 129.js, 129.js.map () 24.5 kB  [rendered]
+chunk {130} 130.js, 130.js.map () 2.83 kB  [rendered]
+chunk {131} 131.js, 131.js.map () 2.88 kB  [rendered]
+chunk {132} 132.js, 132.js.map () 4.43 kB  [rendered]
+chunk {133} 133.js, 133.js.map () 4.45 kB  [rendered]
+chunk {134} 134.js, 134.js.map () 10.7 kB  [rendered]
+chunk {135} 135.js, 135.js.map () 10.8 kB  [rendered]
+chunk {136} 136.js, 136.js.map () 4.44 kB  [rendered]
+chunk {137} 137.js, 137.js.map () 4.45 kB  [rendered]
+chunk {138} 138.js, 138.js.map () 10.1 kB  [rendered]
+chunk {139} 139.js, 139.js.map () 10.2 kB  [rendered]
+chunk {140} 140.js, 140.js.map () 13 kB  [rendered]
+chunk {141} 141.js, 141.js.map () 13 kB  [rendered]
+chunk {142} 142.js, 142.js.map () 27.8 kB  [rendered]
+chunk {143} 143.js, 143.js.map () 28.6 kB  [rendered]
+chunk {144} 144.js, 144.js.map () 14.3 kB  [rendered]
+chunk {145} 145.js, 145.js.map () 14.5 kB  [rendered]
+chunk {146} 146.js, 146.js.map () 14.4 kB  [rendered]
+chunk {147} 147.js, 147.js.map () 15.1 kB  [rendered]
+chunk {148} 148.js, 148.js.map () 14.4 kB  [rendered]
+chunk {149} 149.js, 149.js.map () 14.4 kB  [rendered]
+chunk {150} 150.js, 150.js.map () 24.4 kB  [rendered]
+chunk {151} 151.js, 151.js.map () 24.5 kB  [rendered]
+chunk {152} 152.js, 152.js.map () 15.1 kB  [rendered]
+chunk {153} 153.js, 153.js.map () 15.8 kB  [rendered]
+chunk {154} 154.js, 154.js.map () 13.6 kB  [rendered]
+chunk {155} 155.js, 155.js.map () 13.6 kB  [rendered]
+chunk {chunk-172145ad-js} chunk-172145ad-js.js, chunk-172145ad-js.js.map (chunk-172145ad-js) 5.52 kB  [rendered]
+chunk {chunk-1d62a940-js} chunk-1d62a940-js.js, chunk-1d62a940-js.js.map (chunk-1d62a940-js) 12.9 kB  [rendered]
+chunk {chunk-267dafff-js} chunk-267dafff-js.js, chunk-267dafff-js.js.map (chunk-267dafff-js) 1.43 kB  [rendered]
+chunk {chunk-2a112823-js} chunk-2a112823-js.js, chunk-2a112823-js.js.map (chunk-2a112823-js) 1.49 kB  [rendered]
+chunk {chunk-4513ec06-js} chunk-4513ec06-js.js, chunk-4513ec06-js.js.map (chunk-4513ec06-js) 3.25 kB  [rendered]
+chunk {chunk-75ece731-js} chunk-75ece731-js.js, chunk-75ece731-js.js.map (chunk-75ece731-js) 1.01 kB  [rendered]
+chunk {chunk-8cdfc1ff-js} chunk-8cdfc1ff-js.js, chunk-8cdfc1ff-js.js.map (chunk-8cdfc1ff-js) 4.27 kB  [rendered]
+chunk {chunk-f2d9e763-js} chunk-f2d9e763-js.js, chunk-f2d9e763-js.js.map (chunk-f2d9e763-js) 1.63 kB  [rendered]
+chunk {chunk-f5118fa0-js} chunk-f5118fa0-js.js, chunk-f5118fa0-js.js.map (chunk-f5118fa0-js) 1.77 kB  [rendered]
+chunk {chunk-f9db771e-js} chunk-f9db771e-js.js, chunk-f9db771e-js.js.map (chunk-f9db771e-js) 93.8 kB  [rendered]
+chunk {common} common.js, common.js.map (common) 20.3 kB  [rendered]
+chunk {home-home-module} home-home-module.js, home-home-module.js.map (home-home-module) 35.8 kB  [rendered]
+chunk {main} main.js, main.js.map (main) 88.7 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 314 kB [initial] [rendered]
+chunk {polyfills-array-js} polyfills-array-js.js, polyfills-array-js.js.map (polyfills-array-js) 3.11 kB  [rendered]
+chunk {polyfills-css-shim-js} polyfills-css-shim-js.js, polyfills-css-shim-js.js.map (polyfills-css-shim-js) 12.1 kB  [rendered]
+chunk {polyfills-dom-js} polyfills-dom-js.js, polyfills-dom-js.js.map (polyfills-dom-js) 14.6 kB  [rendered]
+chunk {polyfills-es5} polyfills-es5.js, polyfills-es5.js.map (polyfills-es5) 714 kB [initial] [rendered]
+chunk {polyfills-fetch-js} polyfills-fetch-js.js, polyfills-fetch-js.js.map (polyfills-fetch-js) 7.95 kB  [rendered]
+chunk {polyfills-object-js} polyfills-object-js.js, polyfills-object-js.js.map (polyfills-object-js) 1.66 kB  [rendered]
+chunk {polyfills-string-js} polyfills-string-js.js, polyfills-string-js.js.map (polyfills-string-js) 1.39 kB  [rendered]
+chunk {polyfills-url-js} polyfills-url-js.js, polyfills-url-js.js.map (polyfills-url-js) 5.05 kB  [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 9.7 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 83.5 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.49 MB [initial] [rendered]
+Date: 2020-08-04T23:33:14.362Z - Hash: 9f52195d259ac0bbf803 - Time: 25069ms
+[36mINFO[0m[2135] Taking snapshot of full filesystem...        
+[36mINFO[0m[2138] Resolving 107472 paths                       
+[36mINFO[0m[2983] Pushing layer gcr.io/striking-joy-285411/cache:876c0acb291ffd5efe9044ce07d5f5bf08f3e81e2d5ddabc034dd311154960ec to cache now 
+[36mINFO[0m[2985] Saving file app/www for later use            
+[36mINFO[0m[2986] Deleting filesystem...                       
+[36mINFO[0m[2992] Retrieving image manifest nginx:alpine       
+E0804 23:47:32.357473      10 metadata.go:154] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+E0804 23:47:32.360876      10 metadata.go:166] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+[36mINFO[0m[2993] Retrieving image manifest nginx:alpine       
+[36mINFO[0m[2993] Executing 0 build triggers                   
+[36mINFO[0m[2993] Checking for cached layer gcr.io/striking-joy-285411/cache:b40270d56f5827bf44e977a8253acac805b5fe3eda86e49c2db87473456e4329... 
+[36mINFO[0m[2993] Using caching version of cmd: RUN rm -rf /usr/share/nginx/html/* 
+[36mINFO[0m[2993] Checking for cached layer gcr.io/striking-joy-285411/cache:226dbd6798ae66b004c22983f36586bf77b96ea952c0fda5544e022b1141d16b... 
+[36mINFO[0m[2994] No cached layer found for cmd COPY --from=build /app/www/ /usr/share/nginx/html/ 
+[36mINFO[0m[2994] Unpacking rootfs as cmd COPY --from=build /app/www/ /usr/share/nginx/html/ requires it. 
+[36mINFO[0m[2995] RUN rm -rf /usr/share/nginx/html/*           
+[36mINFO[0m[2995] Found cached layer, extracting to filesystem 
+[36mINFO[0m[2995] COPY --from=build /app/www/ /usr/share/nginx/html/ 
+[36mINFO[0m[2995] Resolving 1065 paths                         
+[36mINFO[0m[2996] Taking snapshot of files...                  
+[36mINFO[0m[2996] Pushing layer gcr.io/striking-joy-285411/cache:226dbd6798ae66b004c22983f36586bf77b96ea952c0fda5544e022b1141d16b to cache now 
+
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/udagram-frontend to an unshallow repository
-Generating change log from git ref 61ae56acb5ad200f8077618b7c71105650a7e863 => 5772ec2a0640af9755e6667d0c211b87802eb776
+Generating change log from git ref a3755b717752cae066ac1d3b1cfc51261863ba14 => d313f56c558cf077351443d516629a17e1e9123d
+Associating user ********* in users.jenkins.io with email adrian.blazquez.leon@alumnos.upm.es to git GitProvider user with login adri-n as emails match
+Adding label jenkins.io/git-github-userid=adri-n to user ********* in users.jenkins.io
 Finding issues in commit messages using git format
-WARNING: No release found for *********/udagram-frontend and tag v0.0.9 so creating a new release
-Updated the release information at https://github.com/*********/udagram-frontend/releases/tag/v0.0.9
+WARNING: No release found for *********/udagram-frontend and tag v0.0.14 so creating a new release
+Updated the release information at https://github.com/*********/udagram-frontend/releases/tag/v0.0.14
 generated: /workspace/source/charts/udagram-frontend/templates/release.yaml
-Created Release udagram-frontend-0-0-9 resource in namespace **
-Updating PipelineActivity *********-udagram-frontend-master-2 with version 0.0.9
-Updated PipelineActivities *********-udagram-frontend-master-2 with release notes URL: https://github.com/*********/udagram-frontend/releases/tag/v0.0.9
+Created Release udagram-frontend-0-0-14 resource in namespace **
+Updating PipelineActivity *********-udagram-frontend-master-2 with version 0.0.14
+Updated PipelineActivities *********-udagram-frontend-master-2 with release notes URL: https://github.com/*********/udagram-frontend/releases/tag/v0.0.14
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
 Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file udagram-frontend-0.0.9.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file udagram-frontend-0.0.14.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
-Showing logs for build [32mablazleon-udagram-frontend-mast-6v4qx-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+Showing logs for build [32mablazleon-udagram-frontend-mast-8k29b-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Promoting app udagram-frontend version 0.0.9 to namespace **-staging
-Created Pull Request: https://github.com/*********/environment-c4-staging/pull/1
-Added label updatebot to Pull Request https://github.com/*********/environment-c4-staging/pull/1
-got git provider status pending from PR https://github.com/*********/environment-c4-staging/pull/1
-got git provider status pending from PR https://github.com/*********/environment-c4-staging/pull/1
-got git provider status pending from PR https://github.com/*********/environment-c4-staging/pull/1
-got git provider status pending from PR https://github.com/*********/environment-c4-staging/pull/1
-got git provider status pending from PR https://github.com/*********/environment-c4-staging/pull/1
-Pull Request https://github.com/*********/environment-c4-staging/pull/1 is merged at sha 5d0c314411e5a14fc70348619997431052a7e8e4
-Pull Request merged but we are not waiting for the update pipeline to complete!
-WARNING: Could not find the service URL in namespace **-staging for names udagram-frontend, **-udagram-frontend, **-staging-udagram-frontend
+Promoting app udagram-frontend version 0.0.14 to namespace **-staging
+error: pulling environment repo https://github.com/*********/environment-mycluster-staging.git into /tmp/create-pr599727067: getting repository *********/environment-mycluster-staging: failed to get repository *********/environment-mycluster-staging due to: GET https://api.github.com/repos/*********/environment-mycluster-staging: 404 Not Found []
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-promote-jx-promote'. The execution of the pipeline has stopped.[0m
